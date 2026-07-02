@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Camp2Code - Our Program</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#ffffff",
+                "surface": "#faf8ff",
+                "surface-dim": "#dad9e0",
+                "on-tertiary-container": "#005283",
+                "surface-bright": "#faf8ff",
+                "secondary": "#4153c3",
+                "on-primary-container": "#355700",
+                "on-secondary-fixed-variant": "#2639aa",
+                "on-primary": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "on-error": "#ffffff",
+                "primary-container": "#87d500",
+                "surface-variant": "#e3e1e9",
+                "primary": "#406900",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed": "#dfe0ff",
+                "on-tertiary": "#ffffff",
+                "secondary-container": "#7b8dff",
+                "tertiary": "#00629d",
+                "inverse-primary": "#8ddc11",
+                "on-surface": "#1a1b20",
+                "primary-fixed-dim": "#8ddc11",
+                "tertiary-fixed-dim": "#98cbff",
+                "surface-container": "#eeedf4",
+                "on-secondary-fixed": "#000e5f",
+                "on-background": "#1a1b20",
+                "outline": "#717a63",
+                "inverse-on-surface": "#f1f0f7",
+                "on-surface-variant": "#414a35",
+                "tertiary-container": "#8bc5ff",
+                "inverse-surface": "#2f3036",
+                "primary-fixed": "#a8f938",
+                "outline-variant": "#c1caaf",
+                "on-primary-fixed": "#102000",
+                "surface-container-low": "#f4f3fa",
+                "background": "#faf8ff",
+                "on-secondary-container": "#001a90",
+                "tertiary-fixed": "#cfe5ff",
+                "on-tertiary-fixed-variant": "#004a77",
+                "surface-tint": "#406900",
+                "on-primary-fixed-variant": "#2f4f00",
+                "secondary-fixed-dim": "#bbc3ff",
+                "on-tertiary-fixed": "#001d33",
+                "surface-container-highest": "#e3e1e9"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "container-max": "1280px",
+                "xl": "48px",
+                "xxl": "80px",
+                "lg": "24px",
+                "xs": "4px",
+                "sm": "8px",
+                "md": "16px"
+        },
+        "fontFamily": {
+                "stat-lg": ["JetBrains Mono"],
+                "body-lg": [
+                        "inter"
+                ],
+                "headline-lg-mobile": [
+                        "Clash Display"
+                ],
+                "headline-lg": [
+                        "Clash Display"
+                ],
+                "display-lg": [
+                        "Clash Display"
+                ],
+                "display-lg-mobile": [
+                        "Clash Display"
+                ],
+                "body-md": [
+                        "inter"
+                ],
+                "label-sm": [
+                        "inter"
+                ],
+                "label-mono": ["JetBrains Mono"],
+                "headline-md": [
+                        "Clash Display"
+                ]
+        },
+        "fontSize": {
+                "stat-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.4",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .editorial-shadow {
+            box-shadow: 0px 4px 20px rgba(20, 21, 26, 0.04);
+        }
+        .editorial-shadow-hover:hover {
+            box-shadow: 0px 12px 32px rgba(20, 21, 26, 0.08);
+            transform: translateY(-4px);
+        }
+        .bg-paper {
+            background-color: #FBFAF7;
+        }
+        /* New Brand Palette */
+        .bg-brand-navy {
+            background-color: #000E5F; /* Deep navy blue from on-secondary-fixed */
+        }
+        .text-brand-navy {
+            color: #000E5F;
+        }
+        .btn-primary {
+            background-color: #406900; /* New vibrant logo green from primary */
+            color: #FFFFFF;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #2F4F00; /* on-primary-fixed-variant */
+        }
+        .tag-pill {
+            background-color: rgba(64, 105, 0, 0.1);
+            color: #406900;
+        }
+    </style>
+</head>
+<body class="bg-paper text-on-background min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-surface-container-highest/90 docked full-width top-0 sticky backdrop-blur-md bg-surface dark:bg-surface-container-highest shadow-sm dark:shadow-none z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-lg max-w-container-max mx-auto h-xxl">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-on-surface tracking-tight">
+                Camp2Code
+            </div>
+<div class="hidden md:flex space-x-lg">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 font-label-mono text-label-mono hover:text-primary transition-colors duration-200 scale-95 transition-transform duration-150" href="#">Program</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">Books</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">Members</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-mono text-label-mono hover:text-primary transition-colors duration-200" href="#">FAQ</a>
+</div>
+<div class="hidden md:block">
+<a class="btn-primary px-lg py-sm font-label-mono text-label-mono" href="#">Start Your Journey</a>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-xxl py-xxl max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 space-y-lg">
+<div class="inline-block tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono uppercase">
+                        // THE CURRICULUM
+                    </div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-brand-navy">
+                        Architecting the Next Generation of Builders
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Our program is designed not just to teach syntax, but to engineer problem-solving mindsets. We bridge the gap between academic theory and high-stakes startup reality across six specialized tracks.
+                    </p>
+<div class="pt-sm">
+<a class="btn-primary px-xl py-md font-label-mono text-label-mono inline-block" href="#">Register for Cohort</a>
+</div>
+</div>
+<div class="md:col-span-5 mt-xl md:mt-0 relative">
+<div class="w-full aspect-square rounded-xl overflow-hidden editorial-shadow relative bg-surface-container-low">
+<img class="object-cover w-full h-full absolute inset-0 mix-blend-multiply opacity-90" data-alt="A highly detailed overhead view of a diverse group of focused tech students collaborating around a large, minimalist wooden table in a bright, modern studio. Laptops, notebooks, and architectural schematics are scattered. High-key natural lighting, editorial minimalist aesthetic, deep whites and warm paper tones with vibrant red accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipCU0pwouZDHHrj31-mL_WNxgaLWZ5cHoludZ8Z-BE2hx9XNDLXwJ78t5luPcB4AZH2uPx1Zu-j8HoAtyRmQs3qTjv4BPUb3Z-AE_DctwRjLjdrELEizjBlxTIVkGH4Bs-PJVleGYmQJd4E0FJKfFmo_ppcP4c931Da4jwImj64VlMyTio5Hlr5qoauDMoO-CmnfHKxlza9eBU3O0Uc4ScsqZ75H-hoXIT2PkfVuPO1Oe5u26uoHMcVPH5ui_Q2o36sazsYGp6AL6"/>
+</div>
+<div class="absolute -bottom-lg -left-lg bg-white p-lg rounded-xl editorial-shadow w-64">
+<div class="font-stat-lg text-stat-lg text-primary mb-xs">6 Tracks</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Comprehensive Pathways</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The 6 Tracks Bento Grid -->
+<section class="bg-surface px-margin-mobile md:px-xxl py-xxl">
+<div class="max-w-container-max mx-auto">
+<div class="mb-xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-brand-navy mb-sm">
+                        Specialized Tracks
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                        Choose your focus. Each track is designed with industry-leading outcomes, combining rigorous technical instruction with practical project execution.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[minmax(300px,auto)]">
+<!-- Web Development -->
+<div class="md:col-span-8 bg-white rounded-xl p-xl editorial-shadow editorial-shadow-hover transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-md mb-lg">
+<span class="material-symbols-outlined text-primary text-[40px]" style="font-variation-settings: 'FILL' 1;">code</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy">Web Engineering</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg max-w-2xl">
+                                Master the modern web stack. From responsive frontend architectures using React to robust backend systems with Node.js and scalable database design.
+                            </p>
+<ul class="space-y-sm mb-lg font-body-md text-body-md text-brand-navy">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-sm text-[20px]">check</span>
+                                    Full-stack application deployment
+                                </li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-sm text-[20px]">check</span>
+                                    API design and integration
+                                </li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-xs">
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// REACT</span>
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// NODE.JS</span>
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// POSTGRES</span>
+</div>
+</div>
+<!-- Mobile Development -->
+<div class="md:col-span-4 bg-brand-navy rounded-xl p-xl editorial-shadow transition-all duration-300 relative overflow-hidden flex flex-col justify-between">
+<div class="absolute inset-0 opacity-10">
+<img class="object-cover w-full h-full" data-alt="Abstract minimal geometric wireframes of mobile phone interfaces floating in a dark void. Editorial tech style, deep indigo background with subtle white lines and glowing nodes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz6NcyvHrqBKhTmMFMjFqMZhstwcFjjKx5yX4rxormKtAyeujhHGKbvNWs5Ec4jrqiBL9xX04bkQ1P0xc8bGC0n-e1W4nf9iGjA7uH6DB6fCsbtG68iS6oMihzakaRhjeCg_hie5OR-VI6iDhzFasX9mWA26uBPKDmUHy8B7Ms_i6jfQzzH4szO8lAO3GCnHDxTaeZvWNPDhF_3mJw6B_voxGLglKS4biVgi88XhcyiYK8VyA7YYhBTxnIIVOfw2HnFuA8f0ZysHrL"/>
+</div>
+<div class="relative z-10">
+<div class="flex items-center space-x-md mb-lg">
+<span class="material-symbols-outlined text-white text-[40px]">smartphone</span>
+<h3 class="font-headline-md text-headline-md text-white">Mobile</h3>
+</div>
+<p class="font-body-md text-body-md text-surface-variant mb-lg">
+                                Build native-quality applications for iOS and Android using modern cross-platform frameworks. Focus on performance and fluid UX.
+                            </p>
+<ul class="space-y-sm mb-lg font-body-md text-body-md text-white">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-fixed-dim mr-sm text-[20px]">check</span>
+                                    State management
+                                </li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-fixed-dim mr-sm text-[20px]">check</span>
+                                    Offline-first architecture
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Game Development -->
+<div class="md:col-span-4 bg-white rounded-xl p-xl editorial-shadow editorial-shadow-hover transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-md mb-lg">
+<span class="material-symbols-outlined text-primary text-[40px]">videogame_asset</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy">Game Dev</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                Create immersive experiences. Learn physics, rendering pipelines, and game logic using industry-standard engines.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-xs mt-auto">
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// UNITY</span>
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// C#</span>
+</div>
+</div>
+<!-- Product Design -->
+<div class="md:col-span-4 bg-white rounded-xl p-xl editorial-shadow editorial-shadow-hover transition-all duration-300 flex flex-col justify-between border-t-4 border-primary">
+<div>
+<div class="flex items-center space-x-md mb-lg">
+<span class="material-symbols-outlined text-primary text-[40px]" style="font-variation-settings: 'FILL' 1;">design_services</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy">Product</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                Master UI/UX principles, user research, and wireframing. Design interfaces that are intuitive and visually compelling.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-xs mt-auto">
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// FIGMA</span>
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// UX LABS</span>
+</div>
+</div>
+<!-- Business & People -->
+<div class="md:col-span-4 bg-white rounded-xl p-xl editorial-shadow editorial-shadow-hover transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-md mb-lg">
+<span class="material-symbols-outlined text-primary text-[40px]">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy">Business</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                                The essential non-technical skills: project management, agile methodologies, and leadership in tech environments.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-xs mt-auto">
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// AGILE</span>
+<span class="tag-pill px-sm py-xs rounded-full font-label-mono text-label-mono text-[12px]">// LEADERSHIP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (FAB for Support) -->
+<div class="fixed bottom-md right-md z-50">
+<button aria-label="WhatsApp Support" class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container rounded-full w-16 h-16 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest text-primary-fixed dark:text-primary grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-xxl py-xxl w-full mt-auto">
+<div class="md:col-span-4 space-y-md">
+<div class="font-headline-md text-headline-md font-bold text-surface dark:text-on-background">
+                Camp2Code
+            </div>
+<p class="font-body-md text-body-md text-surface-variant/80 dark:text-on-surface-variant/80 max-w-sm">
+                Empowering the next generation of Abuja developers. Building the future, line by line.
+            </p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-lg md:justify-end items-start pt-sm">
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">Home</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">About</a>
+<a class="font-label-mono text-label-mono text-primary-fixed font-bold hover:text-primary-fixed-dim transition-colors" href="#">Program</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">Books</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">Members</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">Contact</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a>
+</div>
+<div class="md:col-span-12 mt-xl pt-lg border-t border-surface-variant/20 font-body-md text-body-md text-surface-variant/60">
+            © 2024 Camp2Code. Empowering the next generation of Abuja developers.
+        </div>
+</footer>
+</body></html>

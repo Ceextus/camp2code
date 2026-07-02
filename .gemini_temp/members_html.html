@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Camp2Code - Members</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&amp;family=Space+Grotesk:wght@600;700&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#406900",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#87d500",
+                      "on-primary-container": "#355700",
+                      "primary-fixed": "#a8f938",
+                      "on-primary-fixed": "#102000",
+                      "primary-fixed-dim": "#8ddc11",
+                      "on-primary-fixed-variant": "#2f4f00",
+                      "secondary": "#4153c3",
+                      "on-secondary": "#ffffff",
+                      "secondary-container": "#7b8dff",
+                      "on-secondary-container": "#001a90",
+                      "secondary-fixed": "#dfe0ff",
+                      "on-secondary-fixed": "#000e5f",
+                      "secondary-fixed-dim": "#bbc3ff",
+                      "on-secondary-fixed-variant": "#2639aa",
+                      "tertiary": "#00629d",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#8bc5ff",
+                      "on-tertiary-container": "#005283",
+                      "tertiary-fixed": "#cfe5ff",
+                      "on-tertiary-fixed": "#001d33",
+                      "tertiary-fixed-dim": "#98cbff",
+                      "on-tertiary-fixed-variant": "#004a77",
+                      "error": "#ba1a1a",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "outline": "#717a63",
+                      "background": "#faf8ff",
+                      "on-background": "#1a1b20",
+                      "surface": "#faf8ff",
+                      "on-surface": "#1a1b20",
+                      "surface-variant": "#e3e1e9",
+                      "on-surface-variant": "#414a35",
+                      "inverse-surface": "#2f3036",
+                      "inverse-on-surface": "#f1f0f7",
+                      "inverse-primary": "#8ddc11",
+                      "surface-dim": "#dad9e0",
+                      "surface-bright": "#faf8ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f4f3fa",
+                      "surface-container": "#eeedf4",
+                      "surface-container-high": "#e9e7ee",
+                      "surface-container-highest": "#e3e1e9",
+                      "outline-variant": "#c1caaf",
+                      "surface-tint": "#406900"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "48px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px",
+                      "unit": "4px",
+                      "xxl": "80px",
+                      "gutter": "24px",
+                      "lg": "24px",
+                      "xs": "4px",
+                      "sm": "8px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "stat-lg": ["JetBrains Mono"],
+                      "headline-lg-mobile": ["Space Grotesk"],
+                      "display-lg": ["Space Grotesk"],
+                      "body-md": ["Inter"],
+                      "display-lg-mobile": ["Space Grotesk"],
+                      "body-lg": ["Inter"],
+                      "label-mono": ["JetBrains Mono"],
+                      "headline-md": ["Space Grotesk"],
+                      "headline-lg": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "stat-lg": ["24px", {"lineHeight": "1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "label-mono": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #FAF8FF; /* Base layer per Style Guidance */
+            color: theme('colors.on-background');
+        }
+        .editorial-shadow {
+            box-shadow: 0px 4px 20px rgba(20, 21, 26, 0.04);
+        }
+        .editorial-shadow:hover {
+            box-shadow: 0px 12px 32px rgba(20, 21, 26, 0.08);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface-container-highest/90 shadow-sm dark:shadow-none w-full top-0 sticky backdrop-blur-md z-40">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-lg max-w-container-max mx-auto h-xxl">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-on-surface tracking-tight">
+            Camp2Code
+        </div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Program</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Books</a>
+<a class="font-label-mono text-label-mono text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200 scale-95" href="#">Members</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">FAQ</a>
+</nav>
+<button class="hidden md:flex bg-primary text-on-primary font-label-mono text-label-mono px-lg py-sm rounded-lg hover:bg-primary/90 transition-colors">
+            Start Your Journey
+        </button>
+<button class="md:hidden flex items-center text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-lg py-xxl">
+<!-- Header Section -->
+<section class="mb-xxl max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-mono text-label-mono font-bold mb-md">
+<span>// LEADERSHIP</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-lg">
+            Meet the minds behind Abuja's next generation.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Our board and mentors are seasoned professionals bridging the gap between world-class tech education and local talent development. We are designers, engineers, and educators committed to your growth.
+        </p>
+</section>
+<!-- Members Grid -->
+<section class="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-gutter">
+<!-- Member Card 1 -->
+<div class="col-span-1 md:col-span-4 lg:col-span-4 bg-surface-container-lowest rounded-xl p-md editorial-shadow transition-all duration-300 flex flex-col h-full border border-surface-variant/30">
+<div class="w-full aspect-square rounded-lg overflow-hidden mb-md relative bg-surface-variant">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjWyaYrDBhtQkGSVb0POZ4dzdMZLoOxX9ycdQj3XUU266SZTRy_izDlD0BYQBW2Ij4AhcY8ux9faRiM2jPAvD12nUxuewMzM9JJA4CksOzvNao_l-09rL4DbkTiyEfWajORYWFgthWfkqQ31xNMAYKQiHnk80x2j-wkGnDzLIyK6aAlm7qCr7Stf3AWHugI68HcWFENP2O5BAmojx7zZyQKKOvfv2cyuvWaMrgk5cOLs7D1HG7xKqj_Tthebl6TaNIejDDJvydhhsy"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-headline-md mb-xs">Aisha Bello</h3>
+<p class="font-label-mono text-label-mono text-primary mb-md">Founder &amp; Lead Instructor</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                    Former senior engineer at top-tier tech firms, Aisha returned to Abuja to build a curriculum that emphasizes practical, scalable software engineering over theory.
+                </p>
+</div>
+<div class="mt-lg pt-md border-t-2 border-surface-variant/50 flex gap-md">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<!-- Member Card 2 -->
+<div class="col-span-1 md:col-span-4 lg:col-span-4 bg-surface-container-lowest rounded-xl p-md editorial-shadow transition-all duration-300 flex flex-col h-full border border-surface-variant/30 mt-0 lg:mt-xl">
+<div class="w-full aspect-square rounded-lg overflow-hidden mb-md relative bg-surface-variant">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt5j6WgMnTpyLwwsRghp5VB5-HOxRlL3WgqXWrw7MoLKeXXFqC_XCTTeZ-37lNF6HmZ-2e82sgbPoAtqoazLVRXtfV4aXagdRLDluAKoLo-XjtPmFw6ecmvBU_ecSZq-4gWh8TGXO25Kj5_F1gre8pIANa7ruKpWfdYsk-PIAGjeaqHCKT7X_BNMrJNkbtxIXSZ6CA8GHpk-7BBC5R0L8aKtBhGz6dZ79tWW9wT_jACX1WdiQaoz9gbrHHMuyJsCLFiD_fLDNYXsiP"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-headline-md mb-xs">David Okafor</h3>
+<p class="font-label-mono text-label-mono text-primary mb-md">Head of Design Systems</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                    David brings a decade of experience crafting editorial minimalism and intuitive user experiences, translating complex SaaS patterns into approachable learning modules.
+                </p>
+</div>
+<div class="mt-lg pt-md border-t-2 border-surface-variant/50 flex gap-md">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+<!-- Member Card 3 -->
+<div class="col-span-1 md:col-span-4 lg:col-span-4 bg-surface-container-lowest rounded-xl p-md editorial-shadow transition-all duration-300 flex flex-col h-full border border-surface-variant/30">
+<div class="w-full aspect-square rounded-lg overflow-hidden mb-md relative bg-surface-variant">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ6JbLJw5HnkNW3swT_wPuSRG6ppBZTDRkG4gb2AnFAuOFwXeDaT-hBdX3zNsTtUtfK8FTvo9wng0FgpeAxgsfzAeejvtfTPmUdQlmDQDmZE5OkMjcc-kZITYBEpCDN-OScyU9RTFSAjC9MuaBuE48lTU6yp0qaXZWIPQcwMdoT5Fxe6svgRhWhZoBbfp7PxfE6Q6jMaotOi4avXi4BW9DCJF6byrj5JK1FEBtpCG4Gh-7opQFyj1oK8J5CvuDsQ93kJoPaq-tw-eK"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-headline-md mb-xs">Nneka Uzo</h3>
+<p class="font-label-mono text-label-mono text-primary mb-md">Community &amp; Operations</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                    Ensuring our learning environment remains rigorous yet supportive, Nneka manages the daily rhythms of Camp2Code and fosters our growing alumni network.
+                </p>
+</div>
+<div class="mt-lg pt-md border-t-2 border-surface-variant/50 flex gap-md">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+</section>
+<!-- Join Us Section -->
+<section class="mt-xxl pt-xxl border-t-2 border-surface-variant/30 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="col-span-1 md:col-span-5 md:col-start-2">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-md">
+                Looking to contribute?
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                We are always seeking experienced mentors to guide the next wave of developers.
+            </p>
+<button class="bg-surface-container-lowest text-on-background font-label-mono text-label-mono px-lg py-sm rounded-lg border-2 border-on-background hover:bg-surface-variant transition-colors">
+                View Opportunities
+            </button>
+</div>
+<div class="col-span-1 md:col-span-4 md:col-start-8 h-64 bg-surface-variant rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB74OUEmvUD7UPPxXhdLZY8VWwt04JthSQHApv_kK3KeDeUn3dTEUg2IfgZW36ujdrbcy2qPeD-GgSv03uS2LNXk0EHb2k0_VsEUwONT-TA8Uy6UzaWMf1nXP8VQf-3tbQUI52HtfWi8eB0LmrsTnzvyIKpVwvE9_6u-DHIdWhM-0m2H8cbhUI5rfM8cblul3sZ4l_kjE-YaTGkz78B7I1SU21YPjXU_tk_P-pGMgXccwCLyQsSgPoz34V9xtLXVyPlyz0GwqvjLIw6')"></div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Support FAB) -->
+<div class="bg-primary fixed bottom-md right-md rounded-full w-16 h-16 flex items-center justify-center z-50 shadow-md text-on-primary hover:scale-110 transition-transform duration-300 cursor-pointer">
+<span class="material-symbols-outlined font-label-mono text-label-mono" data-icon="chat">chat</span>
+</div>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest mt-auto w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-xxl py-xxl w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-4 flex flex-col gap-lg">
+<div class="font-headline-md text-headline-md font-bold text-surface dark:text-on-background">
+                Camp2Code
+            </div>
+<p class="font-body-md text-body-md text-surface-variant/80 dark:text-on-surface-variant/80">
+                © 2024 Camp2Code. Empowering the next generation of Abuja developers.
+            </p>
+</div>
+<div class="col-span-1 md:col-span-8 flex flex-wrap gap-lg md:justify-end items-start">
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">Home</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">About</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">Program</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">Books</a>
+<a class="font-label-mono text-label-mono text-primary-fixed-dim font-bold hover:text-primary-fixed transition-colors" href="#">Members</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">Contact</a>
+<a class="font-label-mono text-label-mono text-surface-variant/80 dark:text-on-surface-variant/80 hover:text-primary-fixed transition-colors" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+</body></html>
