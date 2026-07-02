@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppSupport from "@/components/layout/WhatsAppSupport";
+import { siteConfig } from "@/config/site";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -24,11 +25,27 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: {
-    default: "Camp2Code — Transform tech consumers into tech creators",
-    template: "%s · Camp2Code",
+    default: siteConfig.name + " — Transform tech consumers into tech creators",
+    template: "%s · " + siteConfig.name,
   },
-  description:
-    "Camp2Code helps young people (8–19) go from tech consumers to creators — web, mobile, game, product, business, and people development.",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({ children }) {
