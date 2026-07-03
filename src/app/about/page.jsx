@@ -7,6 +7,13 @@ export const metadata = {
   title: "About",
   description:
     "Learn about Camp2Code's mission to transform young people in Abuja from tech consumers to tech creators. For ages 8-19, co-ed.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Camp2Code",
+    description:
+      "Our mission: transform young people in Abuja from tech consumers to tech creators. For ages 8-19, co-ed.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

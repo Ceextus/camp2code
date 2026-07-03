@@ -7,6 +7,13 @@ export const metadata = {
   title: "Members",
   description:
     "Meet the Camp2Code leadership team — designers, engineers, and educators committed to empowering the next generation of Abuja developers.",
+  alternates: { canonical: "/members" },
+  openGraph: {
+    title: "Camp2Code Members",
+    description:
+      "Meet the leadership team — designers, engineers, and educators empowering the next generation of Abuja developers.",
+    url: "/members",
+  },
 };
 
 export default function MembersPage() {

@@ -46,6 +46,61 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
   },
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "education",
+};
+
+export const viewport = {
+  themeColor: "#406900",
+  width: "device-width",
+  initialScale: 1,
+};
+
+// Sitewide structured data: who Camp2Code is + how the site is named in search.
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  logo: `${siteConfig.url}/logo.png`,
+  description: siteConfig.description,
+  founder: {
+    "@type": "Person",
+    name: siteConfig.coordinator.name,
+    jobTitle: siteConfig.coordinator.role,
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Kubwa",
+    addressRegion: "Abuja, FCT",
+    addressCountry: "NG",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: `+${siteConfig.whatsappNumber}`,
+    contactType: "customer service",
+    availableLanguage: "English",
+  },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: siteConfig.url,
 };
 
 export default function RootLayout({ children }) {
@@ -58,6 +113,16 @@ export default function RootLayout({ children }) {
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col font-body-md text-on-surface overflow-x-hidden selection:bg-primary selection:text-white">
