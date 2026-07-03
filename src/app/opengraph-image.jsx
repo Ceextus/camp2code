@@ -1,4 +1,7 @@
 import { ImageResponse } from "next/og";
+import { siteConfig } from "@/config/site";
+
+const domain = new URL(siteConfig.url).hostname;
 
 export const alt =
   "Camp2Code — Transform tech consumers into tech creators. Coding camp for ages 8–19 in Abuja.";
@@ -79,7 +82,7 @@ export default function Image() {
           }}
         >
           <div style={{ display: "flex", fontSize: 28, color: "#8ddc11" }}>
-            camp2code.com
+            {domain}
           </div>
           <div
             style={{

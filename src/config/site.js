@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: "Camp2Code",
   description: "Camp2Code helps young people (8–19) go from tech consumers to creators — web, mobile, game, product, business, and people development.",
-  url: "https://camp2code.com",
+  url: "https://camp2code.org",
   keywords: [
     "coding for kids",
     "teen coding camp",
@@ -19,7 +19,7 @@ export const siteConfig = {
   authors: [
     {
       name: "Ifeanyi Okolo",
-      url: "https://camp2code.com",
+      url: "https://camp2code.org",
     }
   ],
   creator: "Ifeanyi Okolo",
